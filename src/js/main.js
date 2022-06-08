@@ -1,6 +1,11 @@
+let counter = 0;
+
 const onJustDontButtonClick = () => {
     console.log("clicked");
-    const modal = document.querySelector(".modal-window")
+    const alertText = document.querySelector(".alert-text");
+    counter++;
+    alertText.innerHTML   = `You have clicked ${counter} times to related button`
+    const modal = document.querySelector(".modal-window");
     let classesToAdd = [ 'show',  ];
     modal.classList.add(...classesToAdd);
     console.log(`modal`, modal);

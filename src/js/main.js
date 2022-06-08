@@ -4,7 +4,9 @@ const onJustDontButtonClick = () => {
     console.log("clicked");
     const alertText = document.querySelector(".alert-text");
     counter++;
-    alertText.innerHTML   = `You have clicked ${counter} times to related button`
+    let insert = `<strong> ${counter} </strong> times`
+    alertText.innerHTML   = `You have clicked <span style="font-weight: bold"> ${insert} </span> to related button bold.`;
+    
     const modal = document.querySelector(".modal-window");
     let classesToAdd = [ 'show',  ];
     modal.classList.add(...classesToAdd);

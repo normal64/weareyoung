@@ -1,0 +1,69 @@
+.ui.card{
+    flex-direction: row ;
+}
+.ui.header{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 120%;
+
+}
+.dont-button{
+    background-color: #E4C1AE!important;
+    border-radius: 32px !important;
+    color: white !important;
+}
+.header-description{
+    max-width: 23em;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+}
+.modal-window{
+    display: none;/* display: none;  */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 210px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 51%;
+  }
+.alert-header{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 120%;
+}
+.alert-text{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+}
+.close.icon{
+    position: absolute ;
+    right: 8px ;
+}
+.close.icon:hover{
+    cursor: pointer ;
+}
+.show{
+    display: block;
+}

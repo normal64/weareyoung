@@ -1,11 +1,20 @@
-let counter = 0;
-
 const onJustDontButtonClick = () => {
     console.log("clicked");
     const alertText = document.querySelector(".alert-text");
-    counter++;
-    let insert = `<strong> ${counter} </strong> times`
-    alertText.innerHTML   = `You have clicked <span style="font-weight: bold"> ${insert} </span> to related button bold.`;
+        let counter ;
+    if(!localStorage.getItem("counter", counter)){
+        counter = 0;
+        counter++;
+        localStorage.setItem("counter", counter)
+    }
+    
+    let counterST = localStorage.getItem("counter", counter);
+    counterST++;
+    localStorage.setItem("counter", counterST)
+    console.log(`counterST`, counterST);
+
+    let insert = `<strong> ${counterST} </strong> times`
+    alertText.innerHTML   = `You have clicked <span style="font-weight: bold"> ${insert} </span> to related button .`;
     
     const modal = document.querySelector(".modal-window");
     let classesToAdd = [ 'show',  ];

@@ -67,3 +67,6 @@ line-height: 150%;
 .show{
     display: block;
 }
+.hide{
+    display: none !important;
+}

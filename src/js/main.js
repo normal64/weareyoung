@@ -11,15 +11,22 @@ const onJustDontButtonClick = () => {
     let counterST = localStorage.getItem("counter", counter);
     counterST++;
     localStorage.setItem("counter", counterST)
+    checkCounter(counterST)
     console.log(`counterST`, counterST);
 
     let insert = `<strong> ${counterST} </strong> times`
     alertText.innerHTML   = `You have clicked <span style="font-weight: bold"> ${insert} </span> to related button .`;
-    
     const modal = document.querySelector(".modal-window");
     let classesToAdd = [ 'show',  ];
     modal.classList.add(...classesToAdd);
     console.log(`modal`, modal);
+}
+const checkCounter = (currentValue) =>{
+    console.log(`currentValue`, currentValue);
+    if(currentValue >= 5){
+        document.querySelector(".fluid.ui.button").classList.remove('hide')
+        console.log('counter reset done');
+    }
 }
 const onJustDontButton = document.querySelector(".dont-button")
 onJustDontButton.onclick =() => onJustDontButtonClick();

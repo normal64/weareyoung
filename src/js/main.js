@@ -23,13 +23,24 @@ const onJustDontButtonClick = () => {
 }
 const checkCounter = (currentValue) =>{
     console.log(`currentValue`, currentValue);
-    if(currentValue >= 5){
+    if(currentValue <= 5){
+        document.querySelector(".fluid.ui.button").classList.add('hide')
+    }
+    if(currentValue > 5){
         document.querySelector(".fluid.ui.button").classList.remove('hide')
         console.log('counter reset done');
     }
+    
 }
+const resetCounterButton = document.querySelector(".fluid.ui.button");
+resetCounterButton.onclick = () => resetCounter();
+
+const resetCounter =    () =>{
+    localStorage.setItem("counter", 0)
+}
+
 const onJustDontButton = document.querySelector(".dont-button")
-onJustDontButton.onclick =() => onJustDontButtonClick();
+onJustDontButton.onclick =  () => onJustDontButtonClick();
 
 const closeModalButton = document.querySelector(".close.icon")
 console.log(`closeModalButton`, closeModalButton);

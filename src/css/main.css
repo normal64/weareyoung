@@ -41,7 +41,8 @@ line-height: 150%;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 51%;
+    /* width: 51%; */
+    width: 1440px;
   }
 .alert-header{
     font-family: 'Roboto';

@@ -7,13 +7,16 @@ const onJustDontButton = document.querySelector(".dont-button");
 onJustDontButton.onclick =  () => onJustDontButtonClick();
 
 const closeModalButton = document.querySelector(".close.icon");
-console.log(`closeModalButton`, closeModalButton);
 closeModalButton.onclick = () => onCloseModalClick();
 
 const modal = document.querySelector(".modal-window");
 modal.onclick = (event) =>{
-    console.log("event target",event.target.parentElement);
-    if(event.target.parentElement != "modal-content"){
+    event.preventDefault();
+    event.stopPropagation();
+    if(event.target.parentElement.classList != "modal-content"
+    && event.target.parentElement.classList != "modal-window"
+    && event.target.parentElement.classList != "modal-window show"  
+    ){
         onCloseModalClick();
     }
 }

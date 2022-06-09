@@ -1,5 +1,6 @@
 export const resetCounter =    () =>{
     localStorage.setItem("counter", 0)
+    onCloseModalClick()
 }
 export const onCloseModalClick = () => {
     const modal = document.querySelector(".modal-window")

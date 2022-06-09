@@ -71,3 +71,46 @@ line-height: 150%;
 .hide{
     display: none !important;
 }
+
+/* figma staff */
+.figma{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.beach-image{
+    max-width: 505px;
+    height: 330px;
+}
+.figma-text-section{
+    padding-left: 95px;
+}
+.text-header{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 120%;
+}
+.text-description{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+max-width: 380px;
+}
+.figma-click-button{
+    background-color: #E4C1AE;
+    width: 128px;
+height: 48px;
+border-radius: 32px;
+color: #FFFFFF;
+border: none;
+outline: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+}
